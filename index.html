@@ -8,7 +8,10 @@
 </head>
 <body>
     <img src="https://static.cabelosbrancos.com.br/imgs/cabelosbrancos1.jpeg" alt="Cabelos Brancos" id="bg_full">    
-    <header>
+    <header><div id="size_screen"></div>
+        <script>
+            document.getElementById('size_screen').innerHTML = `W = ${screen.width} - H = ${screen.height}`
+        </script>
         <nav>
             <ul>
             </ul>
