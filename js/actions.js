@@ -6,7 +6,6 @@
       try {
           const response = await fetch('https://lisvvx9ca9.execute-api.us-east-1.amazonaws.com/default/get_posts');
           const data = await response.json();
-          console.log(content);
           createAccordion(data);
           createMenu(data);
       } catch (error) {
@@ -14,7 +13,7 @@
       }
   }
   
-  function createAccordion(posts.S) {
+  function createAccordion(posts) {
       const accordion = document.getElementById('accordionPosts');
       posts.forEach((post, index) => {
           const card = document.createElement('div');
@@ -41,7 +40,7 @@
   
           const body = document.createElement('div');
           body.className = 'accordion-body';
-          body.innerHTML = post.content;
+          body.innerHTML = post.content.S;
   
           header.appendChild(button);
           collapse.appendChild(body);
