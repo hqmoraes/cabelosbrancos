@@ -6,6 +6,8 @@
       try {
           const response = await fetch('https://lisvvx9ca9.execute-api.us-east-1.amazonaws.com/default/get_posts');
           const data = await response.json();
+          let content=data[0].content;
+          console.log(content);
           createAccordion(data);
           createMenu(data);
       } catch (error) {
