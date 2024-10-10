@@ -62,7 +62,7 @@
   
           const link = document.createElement('a');
           link.href = '#';
-          link.textContent = post.theme;
+          link.textContent = post.theme.S;
           link.addEventListener('click', () => openModal(post));
   
           listItem.appendChild(link);
