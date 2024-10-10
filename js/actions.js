@@ -76,8 +76,8 @@
       const modalTitle = document.getElementById('postModalLabel');
       const modalContent = document.getElementById('postModalContent');
   
-      modalTitle.textContent = post.theme;
-      modalContent.innerHTML = post.content;
+      modalTitle.textContent = post.theme.S;
+      modalContent.innerHTML = post.content.S;
   
       const modal = new bootstrap.Modal(document.getElementById('postModal'));
       modal.show();
